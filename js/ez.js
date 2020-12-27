@@ -68,10 +68,10 @@ $('.ez-banner').eq(index).show().siblings().hide();
      var index = 0;
      $('.change').click(function () {
          // 自增
-         index++;    
+         index++;
+         
+         
          // 边界判断
-         index = index > 3 ? 0 : index;
- 
          // 让里面的 inner-box 运动
          $('.inner-box').stop(true).animate({ left: -index * 1200}, function () {
              if(index === 3) {
